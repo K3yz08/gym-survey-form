@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    background-image: url(../img/gym.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-content {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: auto auto 0px auto;
+}
+
+#title {
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 2px 2px rgb(93, 89, 89);
+    padding-top: 50px;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px rgb(93, 89, 89);
+    font-size: 14px;
+    margin: 20px;
+}
+
+#survey-form {
+    background-color: rgba(0, 16, 36, 0.7);
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    position: relative;
+}
+
+.field {
+    width: 97%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+textarea {
+    height: 50px;
+}
+
+#submit {
+    width: 100%;
+    background-color: rgb(49, 168, 85);
+    padding: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

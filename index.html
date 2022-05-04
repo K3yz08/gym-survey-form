@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Gym Survey Form</title>
+	</head>
+	<body>
+        <div class="main-content">
+			<h1 id="title">Gym Survey Form</h1>
+			<p id="description">Thank you for taking time to help us to know about our clients</p>
+			<form action="" id="survey-form">
+				<!-- Name -->
+				<label for="name" id="name-label">Name</label><br>
+				<input class="field" type="text" id="name" placeholder="Enter your name" required><br><br>
+				<!-- Email -->
+				<label for="email" id="email-label">Email</label><br>
+				<input class="field" type="email" id="email" placeholder="Enter your email" required><br><br>
+				<!-- Age -->
+				<label for="number" id="number-label">Age (optional)</label><br>
+				<input class="field" type="number" id="number" min="10" max="99" placeholder="Age"><br><br>
+				<!-- Level -->
+				<label for="dropdown">Level</label><br>
+				<select class="field" name="level-dropdown" id="dropdown">
+					<option value="">-- Select your current level --</option>
+					<option value="beginner"> Beginner</option>
+					<option value="intermediate">Intermediate</option>
+					<option value="advanced">Advanced</option>
+				</select><br><br>
+				<!-- Part day -->
+				<legend>What is for you the best part of the day to train?</legend>
+				<label for="morning"><input type="radio" name="part-day" value="morning" checked> Morning</label><br>
+				<label for="afternoon"><input type="radio" name="part-day" value="afternoon"> Afternoon</label><br>
+				<label for="evening"><input type="radio" name="part-day" value="evening"> Evening</label><br><br>
+				<!-- Workout splits -->
+				<legend>Which of these workout splits do you prefer? (Check all that apply)</legend>
+				<label for="bro-split"><input type="checkbox" value="bro-split"> Bro split</label><br>
+				<label for="ppl-split"><input type="checkbox" value="ppl-split"> Push/Pull/Legs split</label><br>
+				<label for="ul-split"><input type="checkbox" value="ul-split"> Upper/Lower body split</label><br><br>
+				<!-- Questions -->
+				<label for="comsQuest">Any comments or questions ?</label><br>
+				<textarea class="field" name="questions" id="comsQuest" cols="30" rows="10" placeholder="Enter your comment or question here"></textarea><br><br>
+				<!-- Submit button -->
+				<button type="submit" id="submit">Submit</button>
+			</form>
+		</div>
+    </body>
+	</html>
